@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu | Delicious Bites</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<header>
+    <h1>Our Menu</h1>
+    <p>Click on an item image to add to cart</p>
+    <div class="cart">🛒 Cart: <span id="cartCount">0</span></div>
+</header>
+
+<nav>
+    <a href="index1.html">Home</a>
+    <a href="menu.html">Menu</a>
+</nav>
+
+<div class="section">
+    <label><b>Table Number:</b></label><br><br>
+    <input type="number" id="tableNumber" placeholder="Enter table number">
+</div>
+
+<section class="menu-section">
+
+    <div class="menu-card" onclick="addToCart('Veg Burger',120)">
+        <img src="images/Veg Burger.jpg" width="100px" height="80px" alt="Veg Burger">
+        <h3>Veg Burger</h3>
+        <p>₹120</p>
+    </div>
+
+    <div class="menu-card" onclick="addToCart('Chicken Biryani',220)">
+        <img src="images/Chicken-Biryani.jpg" width="100px" height="100px" alt="Chicken Biryani">
+        <h3>Chicken Biryani</h3>
+        <p>₹220</p>
+    </div>
+
+    <div class="menu-card" onclick="addToCart('Paneer Butter Masala',180)">
+        <img src="images/panner.jpeg" width="100px" height="80px" alt="Paneer Butter Masala">
+        <h3>Paneer Butter Masala</h3>
+        <p>₹180</p>
+    </div>
+
+    <div class="menu-card" onclick="addToCart('Fried Rice',150)">
+        <img src="images/friedrice.webp"  width="100px" height="80px" alt="Fried Rice">
+        <h3>Fried Rice</h3>
+        <p>₹200</p>
+    </div>
+
+    <div class="menu-card" onclick="addToCart('Ice Cream',80)">
+        <img src="images/ice.webp"  width="100px" height="80px"  alt="Ice Cream">
+        <h3>Ice Cream</h3>
+        <p>₹80</p>
+    </div>
+
+    <div class="menu-card" onclick="addToCart('Chicken Gravy',80)">
+        <img src="images/ChickenCurry.webp"  width="100px" height="80px"  alt="Chicken Gravy">
+        <h3>Chicken Gravy</h3>
+        <p>₹150</p>
+    </div>
+
+     <div class="menu-card" onclick="addToCart('Manchurian',80)">
+        <img src="images/manchuria.webp"  width="100px" height="80px"  alt="Chicken Masala">
+        <h3>Manchurian</h3>
+        <p>₹150</p>
+    </div>
+      <div class="menu-card" onclick="addToCart('Pizza',80)">
+        <img src="images/pizza.jpg"  width="100px" height="80px"  alt="Pizza">
+        <h3>Pizza</h3>
+        <p>₹150</p>
+    </div>
+    
+    <div class="menu-card" onclick="addToCart('Steamed Momo',80)">
+        <img src="images/momos.avif"  width="100px" height="80px"  alt="Steamed momos">
+        <h3>Steamed Momo</h3>
+    
+        <p>₹150</p>
+    </div>
+    </div>
+      <div class="menu-card" onclick="addToCart('Cool Cake',80)">
+        <img src="images/cake.jpg"  width="100px" height="80px"  alt="Cool cake">
+        <h3>Cool cake</h3>
+        <p>₹80</p>
+    </div>
+
+</section>
+
+<section class="section">
+    <button onclick="placeOrder()">Place Order</button>
+    <div id="orderSummary"></div>
+</section>
+
+<footer>
+    <p>© 2025 Delicious Bites</p>
+</footer>
+
+<script src="script1.js"></script>
+</body>
+</html>
